@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-# import plotly.express as px
-# import plotly.graph_objects as go
+import plotly as px
+import plotly.graph_objects as go
 import json
 import os
 import datetime
+import anthropic
 
 # ══════════════════════════════════════════════════════════════
 #  ANTHROPIC API  ── Set ANTHROPIC_API_KEY in secrets.toml
 # ══════════════════════════════════════════════════════════════
-# import anthropic
 
 def get_claude_response(api_key: str, prompt: str, system: str = None) -> str:
     """Call Claude via Anthropic API and return response text."""
