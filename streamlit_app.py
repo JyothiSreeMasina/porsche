@@ -10,7 +10,7 @@ import datetime
 # ══════════════════════════════════════════════════════════════
 #  ANTHROPIC API  ── Set ANTHROPIC_API_KEY in secrets.toml
 # ══════════════════════════════════════════════════════════════
-import anthropic
+# import anthropic
 
 def get_claude_response(api_key: str, prompt: str, system: str = None) -> str:
     """Call Claude via Anthropic API and return response text."""
