@@ -374,7 +374,7 @@ ZIP_COORDS = {
 # ══════════════════════════════════════════════════════════════
 @st.cache_data(show_spinner="Loading IRS ZIP Code data…")
 def load_data():
-    df = pd.read_csv("C:\Users\ADMIN\Downloads\va\data.csv")
+    df = pd.read_csv("data.csv")
     df.columns = df.columns.str.strip().str.lower()
     df = df[df["zipcode"] != 99999]
 
